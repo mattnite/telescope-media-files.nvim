@@ -24,8 +24,8 @@ function draw_preview {
     fi
 
     if [[ "$1" == "imagepreview" ]]; then
-      render_at_size "${5}" "${6}" "${2}" "${7}"
-      # viu -b -w ${5} -h ${6} "${2}"
+      #render_at_size "${5}" "${6}" "${2}" "${7}"
+      viu -b -w ${5} -h ${6} "${2}"
 
     elif [[ "$1" == "gifpreview" ]]; then
       # This is static for now, feel free to re-introduce FIFO to make
